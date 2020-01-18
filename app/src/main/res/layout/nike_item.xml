@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="180dp"
+    android:layout_height="250dp"
+    app:layout_constraintHorizontal_bias="0.1"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:cardUseCompatPadding="true"
+    tools:ignore="MissingConstraints">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <TextView
+            android:id="@+id/item_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_4"
+            android:text="@string/no_001"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/item_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_no" />
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_2"
+            android:text="Nike Superfly 6 Elite FG"
+            app:layout_constraintLeft_toLeftOf="@id/item_no"
+            app:layout_constraintTop_toBottomOf="@id/item_img" />
+
+        <TextView
+            android:id="@+id/dollor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_4"
+            android:text="$"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/item_no"
+            app:layout_constraintTop_toBottomOf="@id/item_name" />
+
+        <TextView
+            android:id="@+id/item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_4"
+            android:text="799"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/dollor"
+            app:layout_constraintTop_toBottomOf="@id/item_name" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/cart"
+            app:layout_constraintRight_toRightOf="@id/item_img"
+            app:layout_constraintTop_toBottomOf="@id/item_img" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
